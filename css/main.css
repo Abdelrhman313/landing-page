@@ -267,7 +267,7 @@ button:focus,
   padding-left: 20px;
   padding-right: 20px;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .navbar-offcanvas .offcanvas-menu .nav-form form {
@@ -531,6 +531,7 @@ button:focus,
   padding: 50px;
   overflow: hidden;
   position: relative;
+  background-color: #f9f9f9;
 }
 .blogs .blog .blog-header h2 {
   font-size: 1.3rem;
@@ -603,3 +604,144 @@ button:focus,
   text-align: center;
   color: #444;
 }
+
+/*********************** Contact us **********************/
+.contact-us {
+  padding: 50px;
+}
+
+.contact-us h2 {
+  border-color: #fff;
+  border-right-width: 5px;
+  border-right-style: solid;
+  color: #fff;
+  margin-right: -1px;
+  padding-right: 20px;
+  font-size: 1.563rem;
+  line-height: 1.2;
+}
+
+.contact-form {
+  background: url(../images/contact-bg.png) top right;
+  background-size: cover;
+  border-radius: 10px;
+  min-height: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  padding-top: 30px;
+}
+
+@media (min-width: 1200px) {
+  .contact-us .contact-form {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.contact-form form {
+  padding: 20px 35px;
+}
+
+.contact-us .contact-form input,
+.contact-us .contact-form select,
+.contact-us .contact-form textarea,
+.contact-us .contact-form .btn {
+  border-radius: 5px;
+}
+
+.contact-us .contact-form textarea {
+  height: 90px !important;
+}
+
+.contact-us .contact-form .btn {
+  min-width: 180px;
+  max-width: 200px;
+  float: left;
+  background-color: var(--yello);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.contact-us .contact-form .btn:hover {
+  background-color: #444;
+}
+
+.contact-us .contact-form .col-md-6,
+.contact-us .contact-form .col-12 {
+  padding: 0px;
+}
+.contact-us .contact-form input,
+.contact-us .contact-form select {
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 transparent;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  color: var(--gray);
+  margin-bottom: 20px;
+  font-size: 15px;
+  display: block;
+}
+.contact-us .contact-form input.flag,
+.contact-us .contact-form select.flag {
+  border-radius: 5px 0px 0px 5px;
+  border-left: 0;
+}
+.contact-us textarea {
+  height: 90px !important;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-info ul li {
+  font-size: 1rem;
+  font-weight: var(--medium-weight);
+  line-height: 36px;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+  padding: 0px 5px;
+}
+.contact-info ul li a {
+  display: block;
+  color: #444;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 36px;
+}
+.contact-info ul li a:hover > i,
+.contact-info ul li a:hover > span {
+  color: var(--green) !important;
+}
+.contact-info ul li a i {
+  margin-left: 10px;
+  font-size: 22px;
+  width: 36px;
+  text-align: center;
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  color: var(--gray);
+}
+.contact-info ul li a span {
+  direction: ltr;
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--gray);
+}
+
+@media (max-width:767.9px) {
+  .contact-us{
+    padding: 50px 20px;
+  }
+  .contact-info ul li{
+    text-align: center;
+  }
+  .contact-us .contact-form input,
+  .contact-us .contact-form select ,
+  .contact-us .contact-form input.flag,
+  .contact-us .contact-form select.flag {
+    border-radius: 5px;
+  }
+}  
