@@ -731,17 +731,69 @@ button:focus,
   color: var(--gray);
 }
 
-@media (max-width:767.9px) {
-  .contact-us{
+@media (max-width: 767.9px) {
+  .contact-us {
     padding: 50px 20px;
   }
-  .contact-info ul li{
+  .contact-info ul li {
     text-align: center;
   }
   .contact-us .contact-form input,
-  .contact-us .contact-form select ,
+  .contact-us .contact-form select,
   .contact-us .contact-form input.flag,
   .contact-us .contact-form select.flag {
     border-radius: 5px;
   }
-}  
+}
+
+/******************** mailing-box ******************/
+.mailing-box {
+  padding: 60px 15px;
+  background-image: url(../images/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.mailing-box h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: var(--dark-color);
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.mailing-box input {
+  margin: 0;
+  border: 0;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  height: 58px;
+  border-radius: 5px;
+  width: 100%;
+}
+.mailing-box input:focus{
+  border: none;
+  box-shadow: none;
+}
+.mailing-box button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 58px;
+  line-height: 58px;
+  height: 58px;
+  font-size: 2rem;
+  border-radius: 5px 0px 0px 5px;
+  background-color: var(--green);
+  color: #fff;
+}
+.mailing-box button:hover {
+  background-color: #45bb94;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .mailing-box{
+    text-align: center;
+  }
+}
