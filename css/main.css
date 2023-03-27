@@ -561,6 +561,7 @@ button:focus,
   top: -39px;
   width: 37px;
   height: 30px;
+  line-height: 32px !important;
   border-radius: 0;
   color: var(--green) !important;
   text-align: center;
@@ -771,7 +772,7 @@ button:focus,
   border-radius: 5px;
   width: 100%;
 }
-.mailing-box input:focus{
+.mailing-box input:focus {
   border: none;
   box-shadow: none;
 }
@@ -793,7 +794,101 @@ button:focus,
   color: #fff;
 }
 @media (max-width: 768px) {
-  .mailing-box{
+  .mailing-box {
     text-align: center;
   }
+}
+
+/*********************** Footer  *************************/
+.footer {
+  padding-top: 60px;
+  background-color: #e7e7e7;
+}
+
+.footer h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+.footer h3:after {
+  width: 50px;
+  height: 4px;
+  background: var(--green);
+  display: block;
+  content: "";
+  margin-top: 5px;
+}
+.footer ul {
+  font-size: 1rem;
+  line-height: 42px;
+  color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .basic ul li {
+  transition: all 0.3s linear;
+}
+.footer .basic ul li a {
+  display: block;
+  color: inherit;
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+.footer .basic ul li:hover {
+  padding-right: 5px;
+}
+.footer .basic ul li:hover > a {
+  color: var(--green);
+}
+
+.footer .different ul {
+  display: flex;
+}
+.footer .different > div {
+  margin-bottom: 25px;
+}
+.footer .different ul li {
+  background-color: #fff;
+  margin-left: 12px;
+}
+
+.footer-nav {
+  background: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.footer-nav ul li {
+  padding: 0 15px;
+}
+.footer-nav ul li a {
+  display: block;
+  color: inherit;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-nav ul li a:hover {
+  color: var(--green);
+}
+.footer-nav .btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 56px;
+  margin-left: 5px;
+  color: var(--green);
+}
+.copyright p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.8em;
+  font-weight: 600;
+  margin-top: 15px;
+  padding-bottom: 10px;
 }
