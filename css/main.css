@@ -21,6 +21,12 @@ button:focus,
   box-shadow: none;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+
 /* ****************** upper section ****************** */
 .upper-section {
   padding: 5px 0px;
@@ -525,6 +531,12 @@ button:focus,
   font-size: 17px;
   transition: all 0.3s linear;
 }
+.services .services-cards .service-card p {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 1.5em;
+}
 
 /****************** start Blogs ****************************/
 .blogs {
@@ -891,4 +903,171 @@ button:focus,
   font-weight: 600;
   margin-top: 15px;
   padding-bottom: 10px;
+}
+
+/* ******************************************** */
+
+/*************** Blog Details **********************/
+.blog-details {
+  padding: 50px 0px 30px;
+}
+.blog-details .blog-details-info {
+  margin-bottom: 30px;
+}
+.blog-details .blog-details-info h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.blog-details .blog-details-info h2 span {
+  color: var(--orange);
+}
+.blog-details .blog-details-info p {
+  color: var(--gray);
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 1.8em;
+  letter-spacing: 0.25px;
+  /* text-align: justify; */
+  font-weight: 500;
+}
+.blog-details .blog-details-info .blog-item h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 5px;
+}
+.blog-details .blog-details-info .blog-item span {
+  font-size: 14px;
+  color: var(--gray);
+  position: relative;
+}
+.blog-details .blog-details-info .blog-item span:first-of-type {
+  margin-left: 30px;
+  margin-right: 15px;
+}
+.blog-details .blog-details-info .blog-item span:first-of-type::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  font-family: fontawesome;
+  top: 0px;
+  color: var(--orange);
+}
+.blog-details .blog-details-info .blog-item span:last-of-type::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  font-family: fontawesome;
+  top: 0px;
+  color: var(--orange);
+}
+.blog-details .blog-details-info .blog-item p {
+  margin-top: 10px;
+}
+.blog-details .blog-details-info .blog-item  button {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: var(--orange);
+  color: #fff;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+.blog-details .blog-details-info .blog-item button:hover {
+  background: #444;
+}
+.blog-details .blogs-history{
+  position: sticky;
+  top: 25px;
+}
+.blog-details .blogs-history h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.blog-details .blogs-history h2 span {
+  color: var(--orange);
+}
+.blog-details .blogs-history p {
+  font-size: 14px;
+  color: var(--gray);
+}
+.blog-details .blogs-history .blogs-history-container {
+  background-color: #f9f9f9;
+}
+.blog-details .blogs-history .blogs-history-container .blog-history {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 11px;
+  display: flex;
+}
+.blog-details .blogs-history .blogs-history-container .blog-history .time {
+  width: 70px;
+  height: 74px;
+  background-color: var(--orange);
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+}
+.blog-details
+  .blogs-history
+  .blogs-history-container
+  .blog-history
+  .time
+  p:first-of-type {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+.blog-details
+  .blogs-history
+  .blogs-history-container
+  .blog-history
+  .time
+  p:last-of-type {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.blog-details .blogs-history .blogs-history-container .blog-history .title {
+  padding: 5px 15px 0px;
+}
+.blog-details .blogs-history .blogs-history-container .blog-history .title h5 {
+  font-size: 18px;
+  color: var(--orange);
+}
+.blog-details .blogs-history .blogs-history-container .blog-history .title p {
+  margin: 0px;
+  padding-right: 7px;
+  margin-right: 15px;
+  position: relative;
+}
+.blog-details
+  .blogs-history
+  .blogs-history-container
+  .blog-history
+  .title
+  p:first-of-type::before {
+  content: "";
+  position: absolute;
+  right:  -15px;
+  font-family: fontawesome;
+  top: 0px;
+  color: var(--gray);
+}
+.blog-details
+  .blogs-history
+  .blogs-history-container
+  .blog-history
+  .title
+  p:last-of-type::before {
+  content: "";
+  position: absolute;
+  right: -12px;
+  font-family: fontawesome;
+  top: 0px;
+  color: var(--gray);
 }
